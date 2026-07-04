@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="45.1748mm" height="45.1748mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4503.26 4503.26"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:none}
+    .fil0 {fill:#1F1B20}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M2251.63 0c1243.54,0 2251.63,1008.09 2251.63,2251.63 0,1243.54 -1008.09,2251.63 -2251.63,2251.63 -1243.54,0 -2251.63,-1008.09 -2251.63,-2251.63 0,-1243.54 1008.09,-2251.63 2251.63,-2251.63z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M2251.63 0c1243.54,0 2251.63,1008.09 2251.63,2251.63 0,1243.54 -1008.09,2251.63 -2251.63,2251.63 -1243.54,0 -2251.63,-1008.09 -2251.63,-2251.63 0,-1243.54 1008.09,-2251.63 2251.63,-2251.63z"/>
+    </clipPath>
+     <clipPath id="id2">
+      <path d="M2251.63 0c488.48,0 940.57,155.61 1309.56,419.86l0 3663.54c-368.99,264.26 -821.08,419.86 -1309.56,419.86 -488.48,0 -940.57,-155.61 -1309.56,-419.86l0 -3663.54c368.99,-264.26 821.08,-419.86 1309.56,-419.86z"/>
+     </clipPath>
+      <clipPath id="id3">
+       <rect x="942.08" y="-15.44" width="2619.11" height="4534.15"/>
+      </clipPath>
+     <clipPath id="id4">
+      <path d="M2251.63 0c1243.54,0 2251.63,1008.09 2251.63,2251.63 0,1243.54 -1008.09,2251.63 -2251.63,2251.63 -1243.54,0 -2251.63,-1008.09 -2251.63,-2251.63 0,-1243.54 1008.09,-2251.63 2251.63,-2251.63z"/>
+     </clipPath>
+    <clipPath id="id5">
+     <path d="M2251.63 0c1243.54,0 2251.63,1008.09 2251.63,2251.63 0,1243.54 -1008.09,2251.63 -2251.63,2251.63 -1243.54,0 -2251.63,-1008.09 -2251.63,-2251.63 0,-1243.54 1008.09,-2251.63 2251.63,-2251.63z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g id="_2017896162144">
+    <polygon class="fil0" points="-15.44,-15.44 4518.71,-15.44 4518.71,4518.71 -15.44,4518.71 "/>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <g>
+    </g>
+    <g style="clip-path:url(#id2)">
+     <image style="clip-path:url(#id3)" x="942.08" y="-15.44" width="9068.29" height="4534.15" xlink:href="logo_Images\logo_ImgID1.png"/>
+    </g>
+    <g style="clip-path:url(#id4)">
+    </g>
+   </g>
+   <g style="clip-path:url(#id5)">
+    <polygon class="fil1" points="-15.44,-15.44 4518.71,-15.44 4518.71,4518.71 -15.44,4518.71 "/>
+   </g>
+  </g>
+  <path class="fil1" d="M2251.63 0c1243.54,0 2251.63,1008.09 2251.63,2251.63 0,1243.54 -1008.09,2251.63 -2251.63,2251.63 -1243.54,0 -2251.63,-1008.09 -2251.63,-2251.63 0,-1243.54 1008.09,-2251.63 2251.63,-2251.63z"/>
+ </g>
+</svg>

@@ -9,9 +9,9 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#362A23">
 
-<!-- Favicon (реальный логотип Al Keli) -->
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<!-- Favicon (официальный логотип Al Keli) -->
+<link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 <link rel="manifest" href="assets/favicon/site.webmanifest">
@@ -230,8 +230,17 @@ body.menu-open{overflow:hidden;}
   position:relative; min-height:100svh; display:flex; align-items:flex-end;
   padding-top:var(--header-h); overflow:hidden; background:var(--color-dark); color:var(--color-surface);
 }
-.hero-bg{position:absolute; inset:0; z-index:0;}
-.hero-bg svg{width:100%; height:100%; object-fit:cover;}
+.hero-bg{position:absolute; inset:0; z-index:0; background:var(--color-dark);}
+.hero-video{width:100%; height:100%; object-fit:cover; display:block;}
+.hero-photo-fallback{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:none;}
+@media (max-width:780px){
+  .hero-video{display:none;}
+  .hero-photo-fallback{display:block;}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero-video{display:none;}
+  .hero-photo-fallback{display:block;}
+}
 .hero-scrim{position:absolute; inset:0; background:linear-gradient(180deg, rgba(24,25,23,.15) 0%, rgba(24,25,23,.55) 65%, rgba(24,25,23,.86) 100%); z-index:1;}
 .hero-ghost{
   position:absolute; top:14%; left:50%; transform:translateX(-50%);
@@ -600,26 +609,10 @@ body.menu-open{overflow:hidden;}
 <!-- ============ BLOCK 1. HERO ============ -->
 <section class="hero" id="hero">
   <div class="hero-bg" aria-hidden="true">
-    <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#4A3A30"/>
-          <stop offset="100%" stop-color="#181917"/>
-        </linearGradient>
-      </defs>
-      <rect width="1600" height="1000" fill="url(#heroGrad)"/>
-      <!-- window -->
-      <rect x="1120" y="80" width="380" height="560" rx="4" fill="none" stroke="#B59A79" stroke-width="2" opacity="0.35"/>
-      <line x1="1310" y1="80" x2="1310" y2="640" stroke="#B59A79" stroke-width="2" opacity="0.35"/>
-      <!-- sofa silhouette -->
-      <path d="M120 760 L120 620 a60 60 0 0 1 60-60 h40 a60 60 0 0 1 60 60 v20 M280 620 a60 60 0 0 1 60-60 h520 a60 60 0 0 1 60 60 v20 M980 760 L980 620 a60 60 0 0 1 60-60 h40 a60 60 0 0 1 60 60 v140" fill="none" stroke="#DDD4C6" stroke-width="3" opacity="0.5"/>
-      <rect x="100" y="740" width="960" height="140" rx="16" fill="none" stroke="#DDD4C6" stroke-width="3" opacity="0.5"/>
-      <line x1="100" y1="800" x2="1060" y2="800" stroke="#DDD4C6" stroke-width="2" opacity="0.3"/>
-      <!-- plant -->
-      <circle cx="1400" cy="820" r="46" fill="none" stroke="#A65E43" stroke-width="2" opacity="0.4"/>
-      <path d="M1400 780 Q1370 730 1400 700 Q1430 730 1400 780" fill="none" stroke="#A65E43" stroke-width="2" opacity="0.5"/>
-      <path d="M1400 780 Q1440 740 1460 690" fill="none" stroke="#A65E43" stroke-width="2" opacity="0.45"/>
-    </svg>
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero.webp">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <img class="hero-photo-fallback" src="assets/images/hero.webp" alt="" loading="eager">
   </div>
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="hero-ghost" aria-hidden="true">AL KELI</div>
